@@ -1,0 +1,1 @@
+<?php require __DIR__.'/../app/bootstrap.php';if(!empty($_SESSION['user']))audit($pdo,$_SESSION['user']['id'],'logout');$_SESSION=[];session_destroy();header('Location:login.php');
